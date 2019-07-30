@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence version="2.1" xmlns="http://xmlns.jcp.org/xml/ns/persistence" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistence http://xmlns.jcp.org/xml/ns/persistence/persistence_2_1.xsd">
+  <persistence-unit name="NanoSystemPU" transaction-type="RESOURCE_LOCAL">
+    <provider>org.eclipse.persistence.jpa.PersistenceProvider</provider>
+    <class>modelo.Empleado</class>
+    <class>modelo.Administrativo</class>
+    <class>modelo.DetalleDevolucion</class>
+    <class>modelo.Venta</class>
+    <class>modelo.Factura</class>
+    <class>modelo.Devolucion</class>
+    <class>modelo.Ticket</class>
+    <class>modelo.Producto</class>
+    <class>modelo.Vendedor</class>
+    <class>modelo.DetalleVenta</class>
+    <properties>
+      <property name="javax.persistence.jdbc.url" value="jdbc:derby://localhost:1527/NanoSystemBD"/>
+      <property name="javax.persistence.jdbc.user" value="alejandra"/>
+      <property name="javax.persistence.jdbc.driver" value="org.apache.derby.jdbc.ClientDriver"/>
+      <property name="javax.persistence.jdbc.password" value="123plazasesamo"/>
+    </properties>
+  </persistence-unit>
+</persistence>
